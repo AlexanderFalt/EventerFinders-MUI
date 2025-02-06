@@ -17,7 +17,7 @@ import theme from './styles';  // Import the theme from your styles.js
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename='/EventerFinders-MUI/'>
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/sign-in" element={<SigninPage />} />
